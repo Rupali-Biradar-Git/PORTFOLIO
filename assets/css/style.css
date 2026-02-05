@@ -1,0 +1,492 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Cambo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap");
+
+:root {
+  --black: #5b0689;
+  /* --darkViolate: #735DA5; */
+  --violetp: #7474ee;
+  --darkViolate: #a0a0f4;
+  --headingViolet: #5b0689;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+  object-fit: cover;
+  font-family: "Cambo", serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* hero sec */
+
+.navHero-bg {
+  width: 100%;
+  height: auto;
+  padding-bottom: 5rem;
+  background-color: #efeffb;
+  background-color: #e7d7ff;
+  background-color: #f9f5ff;
+  background-color: #dbdbf2;
+  background-color: #eeeef8;
+  background-color: #eeeef8;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='152' height='152' viewBox='0 0 152 152'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='temple' fill='%23b6b6f6' fill-opacity='0.31'%3E%3Cpath d='M152 150v2H0v-2h28v-8H8v-20H0v-2h8V80h42v20h20v42H30v8h90v-8H80v-42h20V80h42v40h8V30h-8v40h-42V50H80V8h40V0h2v8h20v20h8V0h2v150zm-2 0v-28h-8v20h-20v8h28zM82 30v18h18V30H82zm20 18h20v20h18V30h-20V10H82v18h20v20zm0 2v18h18V50h-18zm20-22h18V10h-18v18zm-54 92v-18H50v18h18zm-20-18H28V82H10v38h20v20h38v-18H48v-20zm0-2V82H30v18h18zm-20 22H10v18h18v-18zm54 0v18h38v-20h20V82h-18v20h-20v20H82zm18-20H82v18h18v-18zm2-2h18V82h-18v18zm20 40v-18h18v18h-18zM30 0h-2v8H8v20H0v2h8v40h42V50h20V8H30V0zm20 48h18V30H50v18zm18-20H48v20H28v20H10V30h20V10h38v18zM30 50h18v18H30V50zm-2-40H10v18h18V10z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 304 304' width='304' height='304'%3E%3Cpath fill='%23cfcffe' fill-opacity='0.4' d='M44.1 224a5 5 0 1 1 0 2H0v-2h44.1zm160 48a5 5 0 1 1 0 2H82v-2h122.1zm57.8-46a5 5 0 1 1 0-2H304v2h-42.1zm0 16a5 5 0 1 1 0-2H304v2h-42.1zm6.2-114a5 5 0 1 1 0 2h-86.2a5 5 0 1 1 0-2h86.2zm-256-48a5 5 0 1 1 0 2H0v-2h12.1zm185.8 34a5 5 0 1 1 0-2h86.2a5 5 0 1 1 0 2h-86.2zM258 12.1a5 5 0 1 1-2 0V0h2v12.1zm-64 208a5 5 0 1 1-2 0v-54.2a5 5 0 1 1 2 0v54.2zm48-198.2V80h62v2h-64V21.9a5 5 0 1 1 2 0zm16 16V64h46v2h-48V37.9a5 5 0 1 1 2 0zm-128 96V208h16v12.1a5 5 0 1 1-2 0V210h-16v-76.1a5 5 0 1 1 2 0zm-5.9-21.9a5 5 0 1 1 0 2H114v48H85.9a5 5 0 1 1 0-2H112v-48h12.1zm-6.2 130a5 5 0 1 1 0-2H176v-74.1a5 5 0 1 1 2 0V242h-60.1zm-16-64a5 5 0 1 1 0-2H114v48h10.1a5 5 0 1 1 0 2H112v-48h-10.1zM66 284.1a5 5 0 1 1-2 0V274H50v30h-2v-32h18v12.1zM236.1 176a5 5 0 1 1 0 2H226v94h48v32h-2v-30h-48v-98h12.1zm25.8-30a5 5 0 1 1 0-2H274v44.1a5 5 0 1 1-2 0V146h-10.1zm-64 96a5 5 0 1 1 0-2H208v-80h16v-14h-42.1a5 5 0 1 1 0-2H226v18h-16v80h-12.1zm86.2-210a5 5 0 1 1 0 2H272V0h2v32h10.1zM98 101.9V146H53.9a5 5 0 1 1 0-2H96v-42.1a5 5 0 1 1 2 0zM53.9 34a5 5 0 1 1 0-2H80V0h2v34H53.9zm60.1 3.9V66H82v64H69.9a5 5 0 1 1 0-2H80V64h32V37.9a5 5 0 1 1 2 0zM101.9 82a5 5 0 1 1 0-2H128V37.9a5 5 0 1 1 2 0V82h-28.1zm16-64a5 5 0 1 1 0-2H146v44.1a5 5 0 1 1-2 0V18h-26.1zm102.2 270a5 5 0 1 1 0 2H98v14h-2v-16h124.1zM242 149.9V160h16v34h-16v62h48v48h-2v-46h-48v-66h16v-30h-16v-12.1a5 5 0 1 1 2 0zM53.9 18a5 5 0 1 1 0-2H64V2H48V0h18v18H53.9zm112 32a5 5 0 1 1 0-2H192V0h50v2h-48v48h-28.1zm-48-48a5 5 0 0 1-9.8-2h2.07a3 3 0 1 0 5.66 0H178v34h-18V21.9a5 5 0 1 1 2 0V32h14V2h-58.1zm0 96a5 5 0 1 1 0-2H137l32-32h39V21.9a5 5 0 1 1 2 0V66h-40.17l-32 32H117.9zm28.1 90.1a5 5 0 1 1-2 0v-76.51L175.59 80H224V21.9a5 5 0 1 1 2 0V82h-49.59L146 112.41v75.69zm16 32a5 5 0 1 1-2 0v-99.51L184.59 96H300.1a5 5 0 0 1 3.9-3.9v2.07a3 3 0 0 0 0 5.66v2.07a5 5 0 0 1-3.9-3.9H185.41L162 121.41v98.69zm-144-64a5 5 0 1 1-2 0v-3.51l48-48V48h32V0h2v50H66v55.41l-48 48v2.69zM50 53.9v43.51l-48 48V208h26.1a5 5 0 1 1 0 2H0v-65.41l48-48V53.9a5 5 0 1 1 2 0zm-16 16V89.41l-34 34v-2.82l32-32V69.9a5 5 0 1 1 2 0zM12.1 32a5 5 0 1 1 0 2H9.41L0 43.41V40.6L8.59 32h3.51zm265.8 18a5 5 0 1 1 0-2h18.69l7.41-7.41v2.82L297.41 50H277.9zm-16 160a5 5 0 1 1 0-2H288v-71.41l16-16v2.82l-14 14V210h-28.1zm-208 32a5 5 0 1 1 0-2H64v-22.59L40.59 194H21.9a5 5 0 1 1 0-2H41.41L66 216.59V242H53.9zm150.2 14a5 5 0 1 1 0 2H96v-56.6L56.6 162H37.9a5 5 0 1 1 0-2h19.5L98 200.6V256h106.1zm-150.2 2a5 5 0 1 1 0-2H80v-46.59L48.59 178H21.9a5 5 0 1 1 0-2H49.41L82 208.59V258H53.9zM34 39.8v1.61L9.41 66H0v-2h8.59L32 40.59V0h2v39.8zM2 300.1a5 5 0 0 1 3.9 3.9H3.83A3 3 0 0 0 0 302.17V256h18v48h-2v-46H2v42.1zM34 241v63h-2v-62H0v-2h34v1zM17 18H0v-2h16V0h2v18h-1zm273-2h14v2h-16V0h2v16zm-32 273v15h-2v-14h-14v14h-2v-16h18v1zM0 92.1A5.02 5.02 0 0 1 6 97a5 5 0 0 1-6 4.9v-2.07a3 3 0 1 0 0-5.66V92.1zM80 272h2v32h-2v-32zm37.9 32h-2.07a3 3 0 0 0-5.66 0h-2.07a5 5 0 0 1 9.8 0zM5.9 0A5.02 5.02 0 0 1 0 5.9V3.83A3 3 0 0 0 3.83 0H5.9zm294.2 0h2.07A3 3 0 0 0 304 3.83V5.9a5 5 0 0 1-3.9-5.9zm3.9 300.1v2.07a3 3 0 0 0-1.83 1.83h-2.07a5 5 0 0 1 3.9-3.9zM97 100a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-48 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 96a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-144a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-96 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm96 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-32 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM49 36a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-32 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM33 68a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 240a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm80-176a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm112 176a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM17 180a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM17 84a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6z'%3E%3C/path%3E%3C/svg%3E"); */
+}
+
+.logo {
+  width: 150px;
+}
+
+.bg-body-tertiary {
+  --bs-bg-opacity: 1;
+  background-color: transparent !important;
+}
+
+/* hero Section */
+
+.hello-text {
+  padding-top: 2rem !important;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  font-family: "Playwrite DE Grund", cursive;
+  /* color: #5B4406; */
+  /* color: #1A7C9F; */
+  color: #5b0689;
+}
+
+.ankitak-text {
+  padding-top: 1rem;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 20px;
+  font-family: "Playwrite DE Grund", cursive;
+  /* color: #5B4406; */
+  /* color: #1A7C9F; */
+  color: #5b0689;
+}
+
+.hero-hr {
+  border: 2px solid #5b44068c;
+  width: 60%;
+  border-radius: 50%;
+}
+
+.cv-div {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cv-but {
+  padding: 0.5em 0.5em;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: transparent;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: var(--headingViolet);
+  transition: all 1000ms;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid var(--headingViolet);
+}
+
+.cv-but:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  outline: 2px solid var(--headingViolet);
+  box-shadow: 4px 5px 17px -4px var(--headingViolet);
+}
+
+.cv-but::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--headingViolet);
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+.cv-but:hover::before {
+  width: 250%;
+}
+
+/* Sec two - About me */
+
+.about-section {
+  text-align: center;
+  padding: 10%;
+}
+
+.my-img {
+  width: 17rem;
+  height: 17rem;
+  /* border-radius: 50%; */
+}
+
+.aboutme-div {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.aboutme-h {
+  font-family: "Playwrite DE Grund", cursive;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--violetp);
+}
+
+.aboutme-para-div {
+  padding-top: 1.5rem;
+}
+
+.aboutme-para {
+  font-size: 17px;
+  width: 100%;
+}
+
+/* Educational Journey */
+
+.figcaption:hover {
+  /* box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 8px 0 rgba(0, 0, 0, 0.19); */
+  text-shadow: 2px 2px 5px rgba(154, 154, 154, 0.749);
+  box-shadow: 10px 10px 25px rgba(171, 171, 171, 0.622);
+  border-radius: 12px;
+}
+
+.edu-h4 {
+  font-family: "Playwrite DE Grund", cursive;
+  font-size: 17px;
+  font-weight: 900;
+  line-height: 30px;
+}
+
+.edu-h5 {
+  font-family: "Playwrite DE Grund", cursive;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.edu-para {
+  font-family: "Playwrite DE Grund", cursive;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: rgb(145, 145, 145);
+}
+
+/* Skills */
+
+.skills-img {
+  margin: 15%;
+  padding: 10%;
+  border: 3px solid var(--darkViolate);
+  outline: 1px dotted var(--darkViolate);
+  outline-offset: 5px;
+  border-radius: 30%;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.boostrap-img {
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+
+.skills-h {
+  font-size: 17px;
+  font-weight: 900;
+  line-height: 30px;
+  font-family: "Playwrite DE Grund", cursive;
+  /* font-family: "Playwrite NG Modern", cursive; */
+  color: var(--black);
+}
+
+.skills-para {
+  color: rgb(141, 141, 141);
+}
+
+/* Project */
+
+.prj-h4 {
+  font-family: "Playwrite DE Grund", cursive;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 30px;
+  color: var(--violetp);
+}
+
+.prj-para {
+  color: rgb(148, 148, 148);
+}
+
+.prj-img {
+  width: 100%;
+  height: 200px;
+}
+
+.complex-button {
+  background-color: var(--darkViolate);
+  /* Green */
+  border: none;
+  color: white;
+  padding: 8px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.complex-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: skewX(-30deg);
+  transition: all 1s ease-in-out;
+}
+
+.complex-button:hover::before {
+  left: 100%;
+}
+
+.complex-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: all 0.5s ease-in-out;
+}
+
+.complex-button:hover::after {
+  width: 100%;
+}
+
+.complex-button span {
+  position: relative;
+  z-index: 1;
+}
+
+.complex-button:hover {
+  color: #ffffff;
+  background-color: var(--darkViolate);
+}
+
+/* contact */
+
+.contact-icon-div {
+  background-color: var(--darkViolate);
+  border-radius: 50%;
+  width: 15%;
+  padding: 10px;
+}
+
+.contact-icon {
+  color: white;
+  font-size: 22px;
+}
+
+.cont-h4 {
+  font-family: "Playwrite DE Grund", cursive;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.cont-para {
+  font-size: 17px;
+}
+
+/* footer */
+
+.footer-bg {
+  background-color: var(--darkViolate);
+}
+
+.social-icon {
+  color: white;
+  font-size: 19px;
+}
+
+.copyright {
+  font-size: 20px;
+  padding-top: 30px;
+}
+
+@media (min-width: 768px) {
+  .hero-hr {
+    width: 25%;
+  }
+  .aboutme-div {
+    padding-bottom: 2rem;
+  }
+  .social-icon {
+    font-size: 25px;
+  }
+  .aboutme-h {
+    font-size: 25px;
+  }
+  .ankitak-text {
+    font-size: 52px;
+    line-height: 20px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .hello-text {
+    font-size: 28px;
+    line-height: 25px;
+  }
+  .my-img {
+    width: 20rem;
+    height: 20rem;
+    /* border-radius: 50%; */
+  }
+  .boostrap-img {
+    padding-top: 13%;
+    padding-bottom: 13%;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-li-a {
+    font-family: "Playwrite DE Grund", cursive;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .navHero-bg {
+    height: 90vh;
+  }
+  .hello-text {
+    padding-top: 6rem;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+
+  .ankitak-text {
+    padding-top: 2rem;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 20px;
+    font-family: "Playwrite DE Grund", cursive;
+  }
+
+  .hero-hr {
+    width: 20%;
+    border-radius: 50%;
+    margin-top: 20px;
+  }
+
+  .contact-icon-div {
+    width: 25%;
+    padding: 10px;
+  }
+
+  .cont-para {
+    font-size: 15px;
+  }
+  .logo {
+    width: 150px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .nav-li-a {
+    font-size: 17px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    width: 250px;
+  }
+  .navHero-bg {
+    height: 100vh;
+  }
+  .hello-text {
+    padding-top: 9rem;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  .ankitak-text {
+    padding-top: 4rem;
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 20px;
+    font-family: "Playwrite DE Grund", cursive;
+  }
+
+  .hero-hr {
+    width: 19%;
+    border-radius: 50%;
+    margin-top: 20px;
+  }
+  .cv-div {
+    padding-top: 5rem;
+  }
+  .about-flex-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .about-flex-one {
+    width: 30%;
+  }
+  .about-flex-two {
+    width: 50%;
+  }
+  .contact-icon-div {
+    width: 17%;
+    padding: 10px;
+  }
+  .cont-para {
+    font-size: 18px;
+  }
+  .boostrap-img {
+    padding-top: 12%;
+    padding-bottom: 12%;
+  }
+  .my-img {
+    width: 23rem;
+    height: 23rem;
+    /* border-radius: 50%; */
+  }
+}
